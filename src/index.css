@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  @apply min-h-screen 
+         bg-gray-50 
+         dark:bg-[#0a0a0a] 
+         text-black 
+         dark:text-white
+         transition-colors 
+         duration-300;
+}
+
+/* 🌈 Custom CSS variables for theme colors */
+@layer base {
+  :root {
+    --background: 249 250 251;
+    --foreground: 17 24 39;
+    --primary: 124 58 237; /* Indigo-500 */
+    --secondary: 236 72 153 ; /* Purple-600 */
+     
+    --muted-foreground: 107 114 128; /* gray-500 */
+    --subtle-foreground: 156 163 175; /* gray-400 */
+    --accent-foreground: 79 70 229; /* indigo-600 */
+  }
+
+  .dark {
+  --background: 15 15 15;        /* 🔥 DARK mode bg */
+  --foreground: 235 235 235;     /* 🔥 DARK mode text */
+  --primary: 59 130 246;
+  --primary-foreground: 255 255 255;
+  --border: 40 40 40;
+  --muted: 30 30 30;
+  --muted-foreground: 180 180 180;
+}
+}
+
